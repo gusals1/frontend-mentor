@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./ordersummary.css">
+    <title>order summary (card layout)</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <img src="./images/illustration-hero.svg" class="heroimg">
+
+        <div id="text">
+            <h2>Order Summary</h2>
+            <p>You can now listen to millions of songs, <br>
+            audiobooks, and podcasts on any device<br> 
+            anywhere you like!</p>
+        </div>    
+        <div id="mainbox">
+            <div id="icon">
+                <img src="./images/icon-music.svg" alt="musicicon">
+            </div>
+            <div class="mainboxtext">
+                <h3>Annual Plan</h3> <!--h3을 쓰는 이유는 annual plan과 $59.99부분이 세로로 배치되어야 하는데 flex디자인으로 세로로 배열했기 때문에
+                box형인 hn태그를 사용해 위 한줄을 통째로 차지하게 만들어 $ 부분을 아래줄로 내리기 위함.-->
+                <span>$59.99/year</span>
+                <a href="javascript:void(0)" class="change"> change</a>
+                <!--javascript:void(0) 를 사용하면 a href 링크가 정상적으로 동작하지 않기떄문에 사용-->
+            </div>
+        </div>
+            <div class="last">
+                <button>Proceed to Payment</button>
+                <div class="cancel">Cancel Order</div>
+            </div>
+</div>
+
+</body>
+</html>
